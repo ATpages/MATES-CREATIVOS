@@ -135,6 +135,7 @@ input:hover{
     color: white;
 }
 
+
 footer{
     background-color: #810074;
     width: 100%;
@@ -146,7 +147,7 @@ footer{
     color: white;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     
 }
 .btn{
@@ -194,6 +195,8 @@ footer{
 .bloqueLogo{
     display: flex;
     align-items: center;
+    padding: 5%;
+    width: 100%;
 }
 .copyr{
     display: flex;
@@ -276,7 +279,7 @@ footer{
     justify-content: center;
 }
 input, textarea, select{
-    color: #810074;       
+    color: #810074;
 }
 input[type="checkbox"] {
     accent-color: #810074;
@@ -521,7 +524,10 @@ input[type="radio"] {
     }
     .secciones{
         margin: 5px;
-        padding: 0px;
+        padding: 5px
+    }
+    .barra_sec{
+        font-size: 14px;
     }
 
 }
