@@ -77,7 +77,7 @@
                 <div>
                     <label onfocus="this.size=3;" onblur="this.size=0;" onchange="this.size=1; this.blur()" >
                         *Fecha de Nacimiento: <br>
-                        <input type="date" name="fechaNac">
+                        <input type="date" name="fechaNac" required>
                     </label>
                 </div>    
     <br><!--Acá luchamos sin éxito para poner la selección con nuestro color (#810074): logramos cambiar el hover que funcionó, pero no logramos modificar el elemento seleccionado-->
@@ -94,7 +94,7 @@
                     <div>
                         *Seleccioná las clases que te interesan:
                     </div>
-                    <div>
+                    <div class="classList"  required>
                         <label>
                             <input type="checkbox" name="clases" value="si">Ballet Principiantes
                         </label><br>
