@@ -1,0 +1,105 @@
+
+{%include "defaults/head.html"%}
+
+<body>
+    
+  {%include "defaults/header.html"%}
+  
+    <br>
+    <div>
+        <h2>FORMÁ PARTE DE ESCUELA DE BALLET</h2>
+    </div>
+    <div class="box_form">
+     
+        <!--FORMULARIO SUMATE A NUESTRO STAFF-->
+        <div class="formulario" id="formInsc">
+
+            <form action="mailto:escueladeballet@gmail.com" method="post">
+                <div>
+                    <h6>UNITE AL STAFF</h6>
+                </div>
+
+                <div>
+                    <label>
+                        *Nombre: <br>
+                        <input class="dale" type="text" name="nombre" required >
+                    </label>
+                </div>
+    <br>
+                <div>
+                    <label>
+                        *Apellido: <br>
+                        <input type="text" name="nombre" required>
+                    </label>
+                </div>
+            <br>
+                <div>
+                    <label>
+                        *Teléfono: <br>
+                        <input type="tel" name="telefono" required >
+                    </label>
+                </div>
+    <br>
+                <div>
+                    <label>
+                        *Email: <br>
+                    <input type="email" name="email" required id="campoEmail">
+                </label>
+                </div>
+    <br>
+                <div>
+                    <div class="mb-3">
+                        <label>*Subí tu CV:</label>
+                        <input class="archivo" type="file" required>
+                    </div>
+                </div>
+            <div>
+                <label>
+                    Mensaje: <br>
+                    <textarea name="mensaje" maxlength="100" rows="5"></textarea> <br>
+                    <span>(máximo 100 caracteres)</span>
+                </label>
+            </div>
+
+            <div>
+                <div>
+                    <p>Cómo nos conociste: </p>
+                </div>
+                <div>
+                    <input type="radio" name="data" value="redes"> Redes Sociales
+                </div>
+                <div>
+                    <input type="radio" name="data" value="recom"> Recomendación
+                </div>
+                <div>
+                    <input type="radio" name="data" value="medios"> Medios de comunicación
+                </div>
+                <div>
+                    <input type="radio" name="data" value="otros"> Otros
+                </div>
+            </div>
+
+        
+            <div>
+                <label>
+                    *Cuáles: <br>
+                    <textarea name="mensaje" maxlength="100" rows="5"></textarea> <br>
+                
+                    <span>(máximo 100 caracteres)</span>
+                </label>
+            </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                <div class="letra_chica">*Son campos obligatorios</div>
+            </form>
+        </div>
+    </div>
+<br>
+
+{%include "defaults/footer.html"%}
+
+{%include "defaults/scripts.html"%}
+
+</body>
+</html>

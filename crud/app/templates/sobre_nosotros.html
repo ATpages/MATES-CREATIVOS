@@ -1,51 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuela de Ballet (L&A)</title>
-    <link rel="shortcut icon" href="Imágenes/contenido/iconoedb.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
+
+{%include "defaults/head.html"%}
+
 <body>
-    <header>
-      <div class="navbar"> 
-        <span>
-          <img src="Imágenes/contenido/LOGO_S.png" class="logo_navbar" alt="Logo de la EdB">
-        </span>
-        <div class="barra_sec">
-          <a href="index.html" class="secciones">INICIO</a>
-          <a href="sobre_nosotros.html" class="secciones">SOBRE NOSOTROS</a>
-          <a href="nuestras_clases.html" class="secciones">NUESTRAS CLASES</a>
-          <a href="inscripcion.html" class="secciones">INSCRIBITE</a>
-          <a href="sumate_al_staff.html" class="secciones">UNITE AL STAFF</a>
-          <a href="contacto.html" class="secciones">CONTACTO</a>
-        </div>
-        <div onfocus="this.size=6;" onblur="this.size=0;" onchange="this.size=1; this.blur()" class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Développé
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="index.html">Inicio</a>
-            <a class="dropdown-item" href="sobre_nosotros.html">Sobre Nosotros</a>
-            <a class="dropdown-item" href="nuestras_clases.html">Nuestras Clases</a>
-            <a class="dropdown-item" href="inscripcion.html">Inscribite</a>
-            <a class="dropdown-item" href="sumate_al_staff.html">Unite al Staff</a>
-            <a class="dropdown-item" href="contacto.html">Contacto</a>
-          </div>
-        </div>
-      </div>
-    </header>
+    
+  {%include "defaults/header.html"%}
+  
     <br>
     <div class="seccionDirectora">
         <h2>TATIANA MORILLO DÍAZ</h2>
         <h2>Directora - Profesora</h2>
         <div class="directora">
             
-                <img id="fotoDirec" src="Imágenes/contenido/directora.jpg" alt="Tatiana Morillo Díaz Directora de la EdB">
+                <img id="fotoDirec" src="static/Imágenes/contenido/directora.jpg" alt="Tatiana Morillo Díaz Directora de la EdB">
             
             <div id="dataDirec">Egresada del perfeccionamiento de la carrera de Danza del Instituto Superior de Arte del Teatro Colón y del Taller de Danza Contemporánea del Teatro Municipal General San Martín.
               Sus principales maestros fueron Olga Ferri, Enrique Lommi, Rodolfo Fontan.              
@@ -71,7 +37,7 @@
                       <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <div class="row">
-                            <img class="fotosProfes" src="Imágenes/contenido/prof1.jpg" alt="Foto Leia Organa">
+                            <img class="fotosProfes" src="static/Imágenes/contenido/prof1.jpg" alt="Foto Leia Organa">
                             <div class="col">Egresada del Instituto Superior de Artes del Teatro Colón con las más altas calificaciones de su promoción, habiendo sido sus principales maestros Olga Ferri, Graciela Sultanik y José Luis Lozano. </div>
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem! 
                               <!--<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">boton  </button>-->
@@ -92,7 +58,7 @@
                       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row">
-                            <img class="fotosProfes" src="Imágenes/contenido/prof2.jpg" alt="Foto Valentina Isabela Madrigal">
+                            <img class="fotosProfes" src="static/Imágenes/contenido/prof2.jpg" alt="Foto Valentina Isabela Madrigal">
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
                           
@@ -111,7 +77,7 @@
                       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row">
-                            <img class="fotosProfes" src="Imágenes/contenido/prof3.jpg" alt="Foto Eleonora Ruth Shellstrop">
+                            <img class="fotosProfes" src="static/Imágenes/contenido/prof3.jpg" alt="Foto Eleonora Ruth Shellstrop">
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
                           
@@ -130,7 +96,7 @@
                         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
                             <div class="row">
-                            <img class="fotosProfes" src="Imágenes/contenido/prof4.jpg" alt="Foto Amilyn Holdo Lopez">
+                            <img class="fotosProfes" src="static/Imágenes/contenido/prof4.jpg" alt="Foto Amilyn Holdo Lopez">
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem!</div>
                             <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eveniet magni deleniti voluptatibus earum omnis expedita tempore molestias nihil, tenetur impedit repudiandae id quis similique consequuntur sunt a consectetur? Voluptatem! </div>
                           
@@ -142,62 +108,10 @@
             </div>
     </section>
 <br>
-<footer>
-  <div class="pie_de_pagina">
-    <div class="bloques bloqueLogo">
-      <div>
-        <img src="Imágenes/contenido/LOGO_S.png" class="logo_footer" alt="Logo de la EdB">
-      </div>
-    </div>
-    <div class="bloques">
-      <div>
-      ESCUELA DE BALLET
-      </div>
-      <div>
-        <ul class="lista  bloque1ubic">
-          <li>Pasaje Gelly 3378</li>
-          <li>CABA</li>
-          <li>ARGENTINA</li>
-          <li><a href="contacto.html#ubicacion" class="footer_list">Mapa interactivo</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bloques">
-      <div>
-      REDES SOCIALES
-      </div>
-      <div>
-        <ul class="lista bloque2redes">
-          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #d9d9d9; font-size: medium;"></i></a></li>
-          <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #d9d9d9; font-size: medium;"></i></a></li>
-          <li><a href="https://www.youtube.com/@AmericanBalletTheatre" target="_blank"><i class="fa-brands fa-youtube" style="color: #d9d9d9; font-size: medium;"></i></a></li>
-          <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp" style="color: #d9d9d9; font-size: medium;"></i></a></li>
-          <li><a href="mailto:escueladeballet@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #d9d9d9; font-size: medium;"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bloques">
-      <div>
-      MAPA DEL SITIO
-      </div>
-      <div>
-        <ul class="lista bloque3mapa">
-          <li><a href="index.html" class="footer_list">Inicio</a></li>
-          <li><a href="sobre_nosotros.html" class="footer_list">Sobre Nosotros</a></li>
-          <li><a href="nuestras_clases.html" class="footer_list">Nuestras Clases</a></li>
-          <li><a href="inscripcion.html" class="footer_list">Inscribite</a></li>
-          <li><a href="sumate_al_staff.html" class="footer_list">Unite al STAFF</a></li>
-          <li><a href="contacto.html#ubicacion" class="footer_list">Comunicate con EDB</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="bloques copyr">
-      COPYRIGHT© 2024
-    </div>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/6c5c121f57.js" crossorigin="anonymous"></script>
-<script src="JavaScript.js"></script>
+
+{%include "defaults/footer.html"%}
+
+{%include "defaults/scripts.html"%}
+
 </body>
 </html>

@@ -1,0 +1,55 @@
+
+{%include "defaults/head.html"%}
+
+<body>
+    
+{%include "defaults/header.html"%}
+
+<br>
+<div class="box_form">
+    <div class="formulario" id="formInsc">
+
+        <form action="mailto:escueladeballet@gmail.com" method="post">
+            <div>
+                <h6>BUSCÁ TUS CLASES</h6>
+            </div>
+
+            <div>
+                <label>
+                    *Nombre: <br>
+                    <input type="text" name="nombre" required>
+                </label>
+            </div>
+    <br>
+            <div>
+                <label>
+                    *Apellido: <br>
+                    <input type="text" name="apellido" required>
+                </label>
+            </div>
+    <br>
+            <div>
+                <label>
+                    *Email: <br>
+                <input type="email" name="email" required id="campoEmail">
+            </label>
+            </div>        
+    <br>           
+
+        
+            <div>
+                <input type="submit" value="Buscar Clases">
+            </div>
+            <div class="letra_chica">*Son campos obligatorios</div>
+        </form>
+    </div>
+
+</div>
+<br>
+
+{%include "defaults/footer.html"%}
+
+{%include "defaults/scripts.html"%}
+
+</body>
+</html>

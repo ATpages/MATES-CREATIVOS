@@ -1,0 +1,94 @@
+
+{%include "defaults/head.html"%}
+
+<body>
+    
+{%include "defaults/header.html"%}
+
+  <br>
+    <div>
+        <h1>ESCUELA DE BALLET</h1>
+    </div>
+     <br>
+    <div class="capricho">
+      <div class="logos_redes">
+        <div class="nuestras_redes">
+          <h2>NUESTRAS REDES</h2> <br>
+        </div>
+        <div class="caja_iconos">
+        <div class="icono_red caja_datos">
+          <div class="icono_red"><a class="icono_red" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook icono"></i></a></div>
+          <div class="icono_red"><a class="icono_red" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram icono"></i></a></div>
+          <div class="icono_red"><a class="icono_red" href="https://www.youtube.com/@AmericanBalletTheatre" target="_blank"><i class="fa-brands fa-youtube icono"></i></a></div>
+        </div>
+        <div class="icono_red caja_datos">
+          <div class="icono_red"><a class="icono_red" href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp icono"></i></a></div>
+          <div class="icono_red"><a class="icono_red" href="mailto:escueladeballet@gmail.com" target="_blank"><i class="fa-solid fa-envelope icono"></i></a></div>
+        </div>
+        </div>
+      </div>
+      
+      <div class="formulario">
+        <div>
+          <h2>OPINIONES Y CONSULTAS</h2><br>
+        </div>
+        <div class="formulario" id="formInsc">
+          <form action="mailto:escueladeballet@gmail.com" method="post">
+
+              <div>
+                  <label>
+                      *Nombre: <br>
+                      <input type="text" name="nombre" required>
+                  </label>
+              </div>
+              <div>
+                  <label>
+                      *Tu Email: <br>
+                      <input type="email" name="email" required>
+                  </label>
+              </div>
+              <div>
+                <label>
+                    <input type="checkbox" name="news" value="si" checked>
+                      Quiero recibir información de las clases y cursos
+                </label><br>
+                <label>
+                  <input type="checkbox" name="terminos" value="si" required>
+                    Acepto términos y condiciones
+                </label>
+              </div>
+              <div>
+                <label>
+                  *Mensaje: <br>
+                    <textarea name="mensaje" maxlength="200" rows="5"></textarea><br>
+                    <span>(máximo 200 caracteres)</span>
+                </label>
+              </div> <br>
+              <div>
+                  <input type="submit" value="Enviar">
+              </div>
+              <div class="letra_chica" id="ubicacion">
+                * son campos obligatorios
+              </div>
+              <div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div> <br>
+    <div class="mapa_interactivo" >
+    <address>Pasaje Gelly 3378, C1425CFB Cdad. Autónoma de Buenos Aires</address><br>
+    </div>
+    <div class="mapa_interactivo" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.058039229206!2d-58.40751212485723!3d-34.57739795610763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb564daf7c083%3A0x2ce7a03271d5c67b!2sGelly%203378%2C%20C1425CFB%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715837803830!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<br>
+
+{%include "defaults/footer.html"%}
+
+{%include "defaults/scripts.html"%}
+
+</body>
+</html>

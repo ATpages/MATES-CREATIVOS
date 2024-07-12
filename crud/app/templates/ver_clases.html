@@ -1,0 +1,28 @@
+
+{%include "defaults/head.html"%}
+
+<body>
+    
+{%include "defaults/header.html"%}
+
+<br>
+
+<div>
+    {% for i in cursos %}
+    {{i[1]}} / {{i[2]}}
+    <hr>
+    {% endfor %}
+</div>
+
+<div>
+<a href="/buscar_clases" class="btn">Buscar Clases</a>
+</div>
+
+<br>
+
+{%include "defaults/footer.html"%}
+
+{%include "defaults/scripts.html"%}
+
+</body>
+</html>
