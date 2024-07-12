@@ -22,30 +22,31 @@ def resultados_cursos():
         return result
     
 # Create - insert
-def cargar_cursos(nombre, descripcion, precio):
+def cargar_nuevos_datos(nombre_alumno, apellido_alumno, telefono, email, clase):
     conexion = conexionMySQL()
     with conexion.cursor() as cursor:
-        query = "INSERT INTO usuarios_y_clases (nombre_alumno, apellido_alumno, telefono, correo_electronico, clase) VALUES (%s, %s, %s, %s, %s)"
-        cursor.execute(query, (nombre_alumno, apellido_alumno, telefono, correo_electronico, clase))
+        query = "INSERT INTO usuarios_y_clases (nombre_alumno, apellido_alumno, telefono, email, clase) VALUES (%s, %s, %s, %s, %s)"
+        cursor.execute(query, (nombre_alumno, apellido_alumno, telefono, email, clase))
         result = cursor
         conexion.commit()
         conexion.close()
         return result
+    
 # Update -> 1) 
-def obtener_curso_por_id(id):
+def obtener_dato_por_id(id_alumno):
     conexion = conexionMySQL()
     with conexion.cursor() as cursor:
-        query="SELECT * FROM usuarios_y_clases WHERE id = %s"
-        cursor.execute(query, (id))
+        query="SELECT * FROM usuarios_y_clases WHERE id_alumno = %s"
+        cursor.execute(query, (id_alumno))
         prod = cursor.fetchone()
     conexion.commit()
     conexion.close()
     return prod
 # update -> 2)
-def actualizar_cursos(nombre, descripcion, precio, id):
+def actualizar_datos(nombre_alumno, apellido_alumno, telefono, email, clase, id_alumno):
     conexion = conexionMySQL()
     with conexion.cursor() as cursor:
-        cursor.execute("UPDATE usuarios_y_clases SET nombre_alumno = %s, apellido_alumno = %s, telefono = %s, correo_electronico = %s, clase = %s WHERE id = %s",(nombre_alumno, apellido_alumno, telefono, correo_electronico, clase))
+        cursor.execute("UPDATE usuarios_y_clases SET nombre_alumno = %s, apellido_alumno = %s, telefono = %s, email = %s, clase = %s WHERE id_alumno = %s", (nombre_alumno, apellido_alumno, telefono, email, clase, id_alumno))
         result = cursor
     conexion.commit()
     conexion.close()

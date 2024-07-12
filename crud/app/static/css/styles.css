@@ -265,6 +265,7 @@ footer{
     margin: 5px;
     font-size: 12px;
     color: #810074;
+    text-decoration: none;
 }
 .formulario#formInsc{
     margin: 15px;
