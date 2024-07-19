@@ -6,51 +6,54 @@
   {%include "defaults/header.html"%}
   
     <br>
+
     <div>
-        <h2>INSCRIBITE EN NUESTRAS CLASES</h2>
+        <h2>ACTUALIZÁ TU INFORMACIÓN</h2>
     </div>
     <div class="box_form">
-        <!--FORMULARIO INSCRIBITE EN NUESTRAS CLASES-->
+        <!--FORMULARIO ACTUALIZÁ TUS DATOS. {{datos[5]}} Esto va en "Seleccionar..." para que quede la opción de clase ya elegida, pero traba la edición de datos {{datos[5]}}-->
     
         <div class="formulario" id="formInsc">
 
-            <form action="/ver_datos/editar_datos" method="POST">
+            <form action="/ver_datos/actualizacion_datos" method="POST">
                 <div>
-                    <h6>BAILÁ EN ESCUELA DE BALLET</h6>
+                    <h6>EN CONSTANTE MOVIMIENTO</h6>
                 </div>
+                <!--id oculto pero es necesario para que accione el formulario-->
+                <input type="hidden" name="id_alumno" value="{{datos[0]}}">
 
                 <div>
                     <label>
                         *Nombre: <br>
-                        <input type="text" name="nombre" required>
+                        <input type="text" name="nombre" value="{{datos[1]}}" required>
                     </label>
                 </div>
     <br>
         <div>
             <label>
                 *Apellido: <br>
-                <input type="text" name="apellido" required>
+                <input type="text" name="apellido" value="{{datos[2]}}" required>
             </label>
         </div>
     <br>
                 <div>
                     <label>
                         *Teléfono: <br>
-                        <input type="tel" name="telefono" required>
+                        <input type="tel" name="telefono" value="{{datos[3]}}" required>
                     </label>
                 </div>
     <br>
                 <div>
                     <label>
                         *Email: <br>
-                    <input type="email" name="email" required id="campoEmail">
+                    <input type="email" name="email" value="{{datos[4]}}" required id="campoEmail">
                 </label>
                 </div>
     <br>    
                     <div class="select-container"> 
                     *Curso: <br>
                     <select onfocus="this.size=3;" onblur="this.size=0;" onchange="this.size=1; this.blur()" name="clase" required>
-                        <option value="">Seleccionar...</option>
+                        <option value="">{{datos[5]}}</option>
                         <option value="Ballet Principiantes">Ballet Principiantes</option>
                         <option value="Ballet Preintermedio">Ballet Preintermedio</option>
                         <option value="Ballet Intermedio">Ballet Intermedio</option>

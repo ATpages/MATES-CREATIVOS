@@ -5,14 +5,14 @@ from data_base import conexionMySQL
 # consultas -> CRUD
 
 # Read -> SELECT
-def resultados_cursos():
+def resultados_datos():
     # conexion
     conexion = conexionMySQL()
     # consulta db
     with conexion.cursor() as cursor:
         # Read a single record
         query = "SELECT * FROM usuarios_y_clases"
-        # query2=f"SELECT * FROM productos where id = {id}"
+        # query2=f"SELECT * FROM productos where id = {id_alumno}"
         cursor.execute(query)
     # procesar los resultados -> fetch
         result = cursor.fetchall()
@@ -38,10 +38,10 @@ def obtener_dato_por_id(id_alumno):
     with conexion.cursor() as cursor:
         query="SELECT * FROM usuarios_y_clases WHERE id_alumno = %s"
         cursor.execute(query, (id_alumno))
-        prod = cursor.fetchone()
+        dato = cursor.fetchone()
     conexion.commit()
     conexion.close()
-    return prod
+    return dato
 # update -> 2)
 def actualizar_datos(nombre_alumno, apellido_alumno, telefono, email, clase, id_alumno):
     conexion = conexionMySQL()
@@ -53,10 +53,10 @@ def actualizar_datos(nombre_alumno, apellido_alumno, telefono, email, clase, id_
     return result
 
 # borrar -> delete
-def eliminar_curso(id):
+def eliminar_datos(id_alumno):
     conexion = conexionMySQL()
     with conexion.cursor() as cursor:
-        cursor.execute("DELETE FROM usuarios_y_clases WHERE id = %s", (id))
+        cursor.execute("DELETE FROM usuarios_y_clases WHERE id_alumno = %s", (id_alumno))
         result = cursor
     conexion.commit()
     conexion.close()
